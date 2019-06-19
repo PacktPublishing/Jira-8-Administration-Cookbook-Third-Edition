@@ -1,0 +1,5 @@
+<templatemapping id="10002">
+    <name>Issue Approved</name>
+    <template>issueapproved.vm</template>
+    <templatetype>issueevent</templatetype>
+</templatemapping>

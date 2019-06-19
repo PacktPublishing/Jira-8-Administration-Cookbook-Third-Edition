@@ -1,0 +1,1 @@
+./jira.sh --action addUserWithFile --server http://localhost:8080 --password <password> --user <username> --file /tmp/users.csv

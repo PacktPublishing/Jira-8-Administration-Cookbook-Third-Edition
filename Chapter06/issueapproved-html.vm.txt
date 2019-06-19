@@ -1,0 +1,16 @@
+#disable_html_escaping()
+Hello $issue.reporterUser.displayName,
+<p>
+Your request <a href="">$issue.key</a> has been approved, with the comment below:
+</p>
+<blockquote>
+<p> 
+#if($comment.body)
+    $comment.body
+#else
+    <i>No comment</i>
+#end
+</p>
+</blockquote>
+<br/>
+Internal IT team

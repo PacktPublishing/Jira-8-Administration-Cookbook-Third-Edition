@@ -1,0 +1,27 @@
+import com.atlassian.jira.component.ComponentAccessor
+import com.atlassian.jira.favourites.FavouritesManager
+import com.atlassian.jira.issue.search.SearchRequest
+import com.atlassian.jira.issue.search.SearchRequestManager
+import com.atlassian.jira.user.util.UserManager
+import com.atlassian.jira.security.groups.GroupManager
+import com.atlassian.jira.exception.PermissionException
+
+//Set the filter ID and group to share with here
+Long[] searchRequestIds = [10302,10303,10304]
+String shareWith = "jira-software-users"
+FavouritesManager favouritesManager = ComponentAccessor.getComponent(FavouritesManager.class)
+SearchRequestManager searchRequestManager = ComponentAccessor.getComponent(SearchRequestManager.class)
+UserManager userManager = ComponentAccessor.getComponent(UserManager.class)
+GroupManager groupManager = ComponentAccessor.getComponent(GroupManager.class)
+
+for(Long searchRequestId in searchRequestIds) {
+    SearchRequest searchRequest = searchRequestManager.getSharedEntity(searchRequestId)
+    
+    for (String userName in groupManager.getUserNamesInGroup(shareWith)) {
+        try {
+            favouritesManager.addFavourite(userManager.getUserByName(userName), searchRequest)    
+        } catch (PermissionException e) {
+            // the user does not have permission to view this filter
+        }
+    }
+}

@@ -1,0 +1,24 @@
+def desc = getFieldById("description")
+
+def defaultValue = """
+h2. Describe the problem
+    
+Tell us in details what the problem you are having.
+    
+h2. How to reproduce
+    
+List out the steps to reproduce the problem.
+* step 1
+* step 2
+
+h2. Expected Result
+
+Tell us what you think the correct outcome should be after completing the steps listed above.
+
+h2. Actual Result
+
+Tell use what you actually see after completing the steps listed above."""
+
+if (!underlyingIssue?.description) { 
+    desc.setFormValue(defaultValue)
+}

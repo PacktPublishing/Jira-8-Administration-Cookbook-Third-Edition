@@ -1,0 +1,9 @@
+#if (!$fieldLayoutItem || $fieldLayoutItem.required ==  false)  
+    <option value="-1">
+        $i18n.getText("common.words.none")</option> 
+#else 
+    #if ( !$configs.default ) 
+      <option value="">  
+          $i18n.getText("common.words.none") </option> 
+    #end 
+#end

@@ -1,0 +1,1 @@
+java -jar 'dirname $0'/lib/jira-cli-3.8.0.jar --server http://localhost:8080 --user admin_user --password admin_password "$@"./jira.sh --action addUser --userId tester --userEmail tester@company.com --userFullName Tester

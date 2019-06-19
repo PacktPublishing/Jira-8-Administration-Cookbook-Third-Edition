@@ -1,0 +1,16 @@
+import com.opensymphony.workflow.InvalidInputException 
+import com.atlassian.jira.component.ComponentAccessor
+import com.atlassian.jira.issue.CustomFieldManager 
+import org.apache.commons.lang3.StringUtils 
+ 
+def customFieldManager = ComponentAccessor.getCustomFieldManager()
+def solutionField = customFieldManager.getCustomFieldObjectByName("Solution Details") 
+ 
+def resolution = issue.getResolution().getName() 
+String solution = issue.getCustomFieldValue(solutionField) 
+ 
+if(resolution == "Done" && StringUtils.isBlank(solution)) { 
+    false
+} else {
+    true
+}

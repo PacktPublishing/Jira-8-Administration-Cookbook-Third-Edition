@@ -1,0 +1,1 @@
+#disable_html_escaping()Hello $issue.reporterUser.displayName,Your request $issue.key has been approved, with the comment below:$comment.bodyInternal IT team
