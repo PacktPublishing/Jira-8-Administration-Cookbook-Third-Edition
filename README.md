@@ -65,6 +65,7 @@ is the cofounder of AppFusions and works there as a senior engineer. AppFusions 
 ## Other books by the author
 [Jira Software Essentials - Second Edition ](https://www.packtpub.com/application-development/jira-software-essentials-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781788833516)
 
+
 ### Suggestions and Feedback
 [Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
 
