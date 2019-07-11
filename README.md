@@ -40,16 +40,35 @@ With the following software and hardware list you can run all code files present
 ### Software and Hardware List
 | No. | Software required | OS required |
 | -------- | ------------------------------------ | ----------------------------------- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| 1 | Atlassian Jira Software 8.0 or higher | Windows, Linux |
+| 2 | MySQL Community Server |  Windows, Linux |
+| 3 | MySQL Java Driver |  Windows, Linux |
+| 4 | Configuration Manager for Jira |  Windows, Linux |
+| 5 | ScriptRunner for Jira |  Windows, Linux |
+| 6 | JSU Automation Suite for Jira Workflows |  Windows, Linux |
+| 7 | ScriptRunner for JIRA |  Windows, Linux |
+| 8 | Atlassian Bitbucket Server |  Windows, Linux |
+| 9 | Kerberos SSO | Windows, Linux  |
+| 10 | Authenticator for Jira |  Windows, Linux |
+| 11 | Jira Command Line Interface |  Windows, Linux |
+| 12 | CLI Client |  Windows, Linux |
+| 13 | Google SSO for Atlassian Jira |  Windows, Linux |
+| 15 | Password Policy for Jira |  Windows, Linux |
+| 14 | CFR Part 11 E-Signatures |  Windows, Linux |
+| 15 | Password Policy for Jira |  Windows, Linux |
+| 16 | Enterprise Mail Handler for Jira |  Windows, Linux |
+| 17 | Google Drive for Atlassian Jira |  Windows, Linux |
+| 18 | Atlassian Confluence |  Windows, Linux |
+| 19 | Atlassian Bitbucket Server |  Windows, Linux |
+| 20 | Atlassian Bamboo |  Windows, Linux |
+| 21 | Mozilla Firefox |  Windows, Linux |
+| 22 | RESTClient for Firefox |  Windows, Linux |
+| 23 | Atlassian REST API Browser |  Windows, Linux |
+| 24 | SU for Jira |  Windows, Linux |
+| 25 | Atlassian Command Line Interface |  Windows, Linux |
+| 26 | Last Log for Jira |  Windows, Linux |
+| 27 | Jira Service Desk 4.0 or higher |  Windows, Linux |
+
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://static.packt-cdn.com/downloads/9781838558123_ColorImages.pdf).
 
